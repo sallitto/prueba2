@@ -721,6 +721,10 @@ th {
             "footer";
     }
 
+    .nav_menu{
+        justify-content: center;
+    }
+    
     .header {
         display: flex;
         flex-direction: column;
@@ -779,7 +783,7 @@ th {
     }
 
     .video_index {
-        width: 350px;
+        width: 250px;
         height: 250px;
     }
 }
@@ -800,6 +804,9 @@ th {
             "footer";
     }
 
+    .nav_menu{
+        justify-content: center;
+    }
     .header {
         display: flex;
         flex-direction: column;
@@ -858,7 +865,7 @@ th {
     }
 
     .video_index {
-        width: 350px;
+        width: 250px;
         height: 250px;
     }
 
