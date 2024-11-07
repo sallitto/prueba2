@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- ESTILO BODY ----- */
+
+body {
+    font-family: "Nunito", serif;
+    background-color: black;
+    background-image: url(https://raw.githubusercontent.com/sallitto/proyectoCoderHouse/refs/heads/main/img/fondoBody.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+/* ----- ESTILO GRID ----- */
+
+.contenedor_gral {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.1fr 3fr 0.1fr;
+    grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "div_izq main div_der"
+        "footer footer footer";
+    margin: 0px 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
+}
+
+.div_izq {
+    grid-area: div_izq;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
+}
+
+.nav_gral {
+    grid-area: nav;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
+}
+
+.div_der {
+    grid-area: div_der;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
+}
+
+/* ----- ESTILO HEADER ----- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    font-family: "Rubik Wet Paint", system-ui;
+    color: rgb(140, 148, 145);
+    padding-top: 50px;
+    font-style: oblique;
+
+}
+
+.img_logoIzq {
+
+    padding-top: 10px;
+    height: 150px;
+}
+
+.img_logoDer {
+
+    padding-top: 10px;
+    height: 150px;
+}
+
+/* ----- ESTILO NAV ----- */
+.nav_menu {
+    margin: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opc_nav {
+    color: rgb(140, 148, 145);
+    text-decoration: none;
+    padding: 0.7rem;
+    align-content: center;
+    text-align: center;
+}
+
+.opc_nav:hover {
+    background-color: rgb(140, 148, 145);
+    color: black;
+    border-radius: 20px;
+}
+
+/* ----- ESTILO DIV DERECHO ----- */
+.div_der {
+    align-content: center;
+}
+
+/* ----- ESTILO DIV IZQUIERDO ----- */
+.div_izq {
+    align-content: center;
+}
+
+/* ----- ESTILO MAIN ----- */
+.main {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(140, 148, 145);
+    padding: 20px;
+    justify-content: center;
+}
+
+/* ----- ESTILO FOOTER ----- */
+footer {
+    padding-top: 50px;
+}
+
+.h4_contacto {
+    color: rgb(140, 148, 145);
+    text-align: center;
+}
+
+.contenido-contacto {
+    text-align: center;
+}
+
+.contenido-contacto i {
+    color: rgb(140, 148, 145);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(140, 148, 145);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 10px 5px;
+    font-size: 20px;
+}
+
+.contenido-contacto i:hover {
+    background-color: rgb(140, 148, 145);
+    color: black;
+}
+
+.h5_copy {
+    color: rgb(140, 148, 145);
+    text-align: center;
+    font-size: x-small;
+}
+
+
+/* ----- ESTILO COMPONENTES MAIN ( SECCION INDEX ) ----- */
+.div_video {
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+
+}
+
+.video_index {
+    border-radius: 5%;
+}
+
+.div_parrafo {
+    color: rgb(140, 148, 145);
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    justify-content: center;
+}
+
+.parrafo_main {
+    font-size: large;
+}
+
+.download {
+
+    color: rgb(140, 148, 145);
+    font-size: xx-large;
+}
+
+
+
+/* ----- ESTILO COMPONENTES MAIN ( SECCION COMANDOS ) ----- */
+.div_comandos {
+    align-content: center;
+    margin-left: 10px;
+}
+
+
+.tabla_comandos {
+    border: solid 1px rgb(140, 148, 145);
+    padding: 0px;
+    margin: 0px auto;
+}
+
+th {
+    font-family: "Kanit", serif;
+    border: solid 1px rgb(140, 148, 145);
+    text-align: center;
+}
+
+.td_comandos {
+    font-family: "Kanit", serif;
+    border: solid 1px rgb(140, 148, 145);
+    text-align: center;
+}
+
+.p_globalchat {
+    color: #ff8284;
+}
+
+.p_citychat {
+    color: #8482ff;
+}
+
+.p_guildchat {
+    color: #b5ffb5;
+}
+
+.p_partychat {
+    color: #e6e784;
+}
+
+/* ----- ESTILO COMPONENTES MAIN ( SECCION MAPAS ) ----- */
+
+.div_listmaps {
+   margin: 100px;
+   padding-right: 50px;
+}
+
+.form-check-input {
+    background-color: rgba(7, 7, 7, 0.932);
+}
+
+.form-check-input:checked {
+    background-color: rgb(140, 148, 145);
+    border-color: rgb(140, 148, 145);
+}
+
+.div_mapas {
+
+    height: 450px;
+    width: 450px;
+    overflow: auto;
+    text-align: center;
+}
+
+.img_mapas {
+
+    border: 2px double gray;
+    opacity: 0.4;
+}
+
+.img_mapas:hover {
+    border: solid rgb(140, 148, 145);
+    opacity: 1;
+    border-radius: 10px;
+}
+
+/* ----- ESTILO COMPONENTES MAIN ( SECCION MONSTERS ) ----- */
+
+.div_monsters {
+    text-align: center;
+}
+
+.td_monsters {
+    font-family: "Kanit", serif;
+    border: solid 1px rgb(140, 148, 145);
+    margin: auto;
+    padding: 5px;
+}
+
+.td_monsters:hover {
+    background-color: rgba(177, 165, 165, 0.39);
+}
+
+/* ----- ESTILO COMPONENTES MAIN ( SECCION REGLAS ) ----- */
+
+
+.item_regla {
+    font-family: "Nunito", serif;
+    list-style-type: upper-roman;
+    margin: 0 20px;
+    padding: 1px;
+}
+
+/* ----- Dando estilo propio a componentes bootstrap (acordeon) -----*/
+
+.accordion {
+    text-align: center;
+    align-content: center;
+    border: none;
+}
+
+.accordion-item {
+    align-items: center;
+    color: rgb(140, 148, 145);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.accordion-button {
+    color: rgba(7, 7, 7, 0.932);
+    background-color: rgb(140, 148, 145);
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(7, 7, 7, 0.932);
+    background-color: rgb(140, 148, 145);
+    box-shadow: rgb(140, 148, 145);
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 1399px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+        display: none;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+        display: none;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+        display: none;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .container_gral {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo {
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+
+    }
+
+    .img_logoIzq {
+        height: 100px;
+    }
+
+    .img_logoDer {
+        height: 100px;
+        display: none;
+    }
+
+    .img_der {
+        display: none;
+    }
+
+    .img_izq {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .div_video {
+        border: none;
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+
+}
