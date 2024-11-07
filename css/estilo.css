@@ -251,8 +251,8 @@ th {
 /* ----- ESTILO COMPONENTES MAIN ( SECCION MAPAS ) ----- */
 
 .div_listmaps {
-   margin: 100px;
-   padding-right: 50px;
+    margin: 100px;
+    padding-right: 50px;
 }
 
 .form-check-input {
@@ -341,8 +341,17 @@ th {
 @media screen and (max-width: 320px) {
 
     .container_gral {
-        display: flex;
-        flex-direction: column;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        margin: 0px 20px;
     }
 
     .header {
