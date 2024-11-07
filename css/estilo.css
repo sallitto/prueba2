@@ -705,13 +705,14 @@ th {
     .parrafo_main {
         font-size: large;
         margin: 0px;
-        padding: 0px 100px;
+        padding: 0px 50px;
     }
 
     .video_index {
-        width: 250px;
+        width: 300px;
         height: 250px;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -788,11 +789,11 @@ th {
     .parrafo_main {
         font-size: large;
         margin: 0px;
-        padding: 0px 100px;
+        padding: 0px 50px;
     }
 
     .video_index {
-        width: 250px;
+        width: 300px;
         height: 250px;
     }
 }
@@ -870,11 +871,11 @@ th {
     .parrafo_main {
         font-size: large;
         margin: 0px;
-        padding: 0px 100px;
+        padding: 0px 50px;
     }
 
     .video_index {
-        width: 250px;
+        width: 300px;
         height: 250px;
     }
 
