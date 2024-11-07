@@ -647,6 +647,10 @@ th {
             "footer";
     }
 
+    .nav_menu{
+        justify-content: center;
+    }
+
     .header {
         display: flex;
         flex-direction: column;
@@ -703,6 +707,11 @@ th {
         margin: 0px;
         padding: 0px 100px;
     }
+
+    .video_index {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -724,7 +733,7 @@ th {
     .nav_menu{
         justify-content: center;
     }
-    
+
     .header {
         display: flex;
         flex-direction: column;
