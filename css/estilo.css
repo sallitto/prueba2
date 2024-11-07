@@ -684,8 +684,12 @@ th {
         border: none;
     }
     .video_index {
-        width: 350px;
+        width: 380px;
         height: 250px;
+    }
+
+    footer{
+        padding: 10px;
     }
 
 }
@@ -762,7 +766,7 @@ th {
     }
 
     .video_index {
-        width: 350px;
+        width: 380px;
         height: 250px;
     }
 }
@@ -837,7 +841,7 @@ th {
         border: none;
     }
     .video_index {
-        width: 350px;
+        width: 380px;
         height: 250px;
     }
 
