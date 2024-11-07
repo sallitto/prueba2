@@ -857,4 +857,9 @@ th {
         padding: 0px 100px;
     }
 
+    .video_index {
+        width: 350px;
+        height: 250px;
+    }
+
 }
